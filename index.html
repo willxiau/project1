@@ -12975,24 +12975,3 @@
             </div>
         </div>
     </div>
-    <script>
-        function closePopup() {
-            const popupOverlay = document.getElementById('popupOverlay');
-            popupOverlay.style.opacity = '0';
-            popupOverlay.style.transition = 'opacity 0.3s ease';
-
-            setTimeout(() => {
-                popupOverlay.style.display = 'none';
-            }, 300);
-        }
-
-        // Menutup popup ketika mengklik area di luar popup
-        document.getElementById('popupOverlay').addEventListener('click', function (event) {
-            if (event.target === this) {
-                closePopup();
-            }
-        });
-    </script>
-</body>
-
-</html>
